@@ -1,0 +1,14 @@
+$primaryPurple : hsla(240, 42%, 30%, 1);
+
+$primaryOrange : hsla(34.332, 65.09%, 67.45%, 1);
+
+@mixin centerise ($direction, $spacing) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $spacing;
+    justify-items: center;
+}
+
+.prosto-one {
+    font-family: "Prosto One", cursive;
+}
