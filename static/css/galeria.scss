@@ -1,0 +1,201 @@
+@import "./variables";
+@import './styles';
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    @include centerise(column, center);
+    transition: all .4s ease-in-out;
+    opacity: 1;
+    z-index: 98;
+
+    .overlay__bg {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background-color: hsla(0, 0%, 0%, .85);
+        z-index: 99;
+    }
+
+    .overlay__conteiner {
+        @include centerise(column, center);
+        width: fit-content;
+        height: fit-content;
+        max-height: 90vh;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 100;
+
+        .overlay__close {
+            position: absolute;
+            color: white;
+            right: 0px;
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: inherit;
+            visibility: visible;
+            cursor: pointer;
+            @include centerise(column, space-evenly);
+            transform: translate(0px, -35px);
+
+            * {
+                border: 1px solid white;
+                width: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .left-line {
+                transform: rotate(45deg) translate(4px, 3px);
+            }
+
+            .right-line {
+                transform: rotate(-45deg) translate(4px, -3px);
+            }
+        }
+
+        .overlay__img {
+            object-fit: cover;
+            object-position: center;
+            max-width: 90vw;
+            max-height: 80vh;
+        }
+    }
+}
+
+.overlay-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hero__main {
+    background-image: url('../images/clean_dining_room.png');
+    overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+    .hero__main {
+        background-position: center center;
+    }
+}
+
+.hero__content {
+    background-color: hsla(240, 42%, 30%, .8);
+    color: white;
+    width: 100%;
+    height: 100%;padding-bottom: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .hero__content {
+        width: fit-content !important;
+        height: fit-content !important;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .hero__title {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero__title {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .hero__title {
+        .hero__title-animation{
+            font-size: inherit !important;
+        }
+    }
+}
+
+.hero__button {
+    border: 2px solid white;
+    margin-bottom: 5px;
+}
+
+.main__wrapper {
+    border: 3px solid $primaryPurple;
+    width: 90%;
+}
+
+.main__title {
+    margin: auto;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: $primaryPurple;
+    font-weight: 100;
+}
+
+.text {
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .text {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.main__pics {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    position: relative;
+
+    .pic__button {
+        margin: 20px auto;
+        width: fit-content;
+        height: fit-content;
+        display: inline-block;
+        border: 5px solid white;
+        box-shadow: 0 14px 18px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+
+        .pic {
+            width: 225px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+            position: relative;
+
+        }
+
+
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .main__pics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .main__pics {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
