@@ -1,65 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PASZTOR GENERAL KFT</title>
+  <meta name="title" content="PASZTOR GENERAL KFT - A takarító cég">
+  <meta name="description"3
+    content="Ha takarító céget keres Budapesten, jó helyen jár! Budapest egyik leújabb és egyben egyik legjobb takarító cége csak arra vár, hogy ön felkeresse!">
+  <meta name="keywords"
+    content="budapest,takarító,takarítás,pasztor general,takarító cég,olcsó,egyszeri takarítás,általános takarítás,profi takarítás,legjobb takarító cég">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="Hungarian">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Schmidt Adrián">
+  <title>PASZTOR GENERAL KFT - A takarító cég</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./static/css/styles.css" />
   <link rel="stylesheet" href="./static/css/index.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="icon" href="./static/images/title_logo.png" type="image/icon type" />
 </head>
 
 <body>
-  <div class="">
+  <div id="main-container">
     <?php require_once './components/header.php' ?>
     <!-- content div start -->
-    <div class="hero__main" id="hero__main" style="opacity: 1">
-      <h1 class="hero__title sawarabi">A legjobb helyen jár,<br />ha <span class="hero__ sawarabi">tiszta helyiséget</span> szeretne!</h1>
-      <a href="./rolunk.php" class="hero__button sawarabi">Ismerkedjen meg velünk!</a>
+    <div class="hero__main" id="hero__main">
+      <h1 class="hero__title">A legjobb helyen jár, ha minőségi takarítást szeretne!</h1>
+      <a href="./rolunk.php" class="hero__button">Ismerkedjen meg velünk!</a>
     </div>
-    <div class="proposer__main" id="first_proposer__main" style="margin:32vh 0 0">
-      <img src="./static/images/clean_dining_room.png" class="proposer__image" alt="Tiszta étkező">
-      <h2 class="proposer__title sawarabi">Szeretné tudni, mire fizet be?<br />Nézze meg korábbi munkáinkat!</h2>
-      <div class="proposer__buttons-main">
-        <a href="./galeria.php" class="proposer__button sawarabi">Galéria megtekintése</a><a href="./kapcsolat.php"
-          class="proposer__button sawarabi">Lépjen velünk kapcsolatba!</a>
+    <div class="main__wrapper" id="main__wrapper">
+      <div class="proposer__main" id="first_proposer__main">
+        <img src="./static/images/clean_dining_room.png" class="proposer__image" alt="Tiszta étkező">
+        <div class="proposer__fade-left"></div>
+        <div class="proposer__content">
+          <h2 class="proposer__title">Szeretné tudni, mire fizet be?<br />Nézze meg korábbi munkáinkat!</h2>
+          <p class="proposer_paragraph">Ne higgyen nekünk! Higgyen a saját szemének! Nézze meg korábbi munkáinkat és
+            győződjön meg minőségi takarításunkról a saját szemével!</p>
+          <div class="proposer__buttons-main">
+            <a href="./galeria.php" class="proposer__button">Galéria megtekintése</a><a href="./kapcsolat.php"
+              class="proposer__button">Lépjen velünk kapcsolatba!</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="proposer__main">
-      <img src="./static/images/cleaner_team.png" class="proposer__image" alt="Takarító csapat">
-      <h2 class="proposer__title sawarabi">Kik vagyunk mi?</h2>
-      <div class="proposer__buttons-main">
-        <a href="./galeria.php" class="proposer__button sawarabi">Ismerkedjen meg csapatunkkal!</a>
+      <div class="proposer__main">
+        <img src="./static/images/cleaner_team.png" class="proposer__image" alt="Takarító csapat">
+        <div class="proposer__fade-right"></div>
+        <div class="proposer__content">
+          <h2 class="proposer__title">Kik vagyunk mi?</h2>
+          <p class="proposer_paragraph">Egy megbízható takarító céget szeretne, akikre lehet számítani? A legjobb helyen
+            jár! Ismerkedjen meg a Pasztor General Taki csapatával!</p>
+          <div class="proposer__buttons-main">
+            <a href="./galeria.php" class="proposer__button">Ismerkedjen meg csapatunkkal!</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="proposer__main">
-      <img src="./static/images/cleaning_machine.png" class="proposer__image" alt="Takarítógép">
-      <h2 class="proposer__title sawarabi">Pontosan mivel is foglalkozunk?</h2>
-      <div class="proposer__buttons-main">
-        <a href="./galeria.php" class="proposer__button sawarabi">Nézze meg szolgáltatásainkat!</a>
+      <div class="proposer__main">
+        <img src="./static/images/cleaning_machine.png" class="proposer__image" alt="Takarítógép">
+        <div class="proposer__fade-left"></div>
+        <div class="proposer__content">
+          <h2 class="proposer__title">Pontosan mivel is foglalkozunk?</h2>
+          <p class="proposer_paragraph">Válasszon hatalmas takarítási kínálatunkból, a cégére szabottan!</p>
+          <div class="proposer__buttons-main">
+            <a href="./galeria.php" class="proposer__button">Nézze meg szolgáltatásainkat!</a>
+          </div>
+        </div>
       </div>
       <div class="proposer__main">
         <img src="./static/images/contact.png" class="proposer__image" alt="Laptop - Kapcsolatfelvétel">
-        <h2 class="proposer__title sawarabi">Kérdése lenne?</h2>
-        <div class="proposer__buttons-main">
-          <a href="./galeria.php" class="proposer__button sawarabi">Vegye fel velünk a kapcsolatot!</a>
+        <div class="proposer__fade-right"></div>
+        <div class="proposer__content">
+          <h2 class="proposer__title">Kérdése lenne?</h2>
+          <p class="proposer_paragraph">Nem találta meg, amit keresett? Kérdése maradt volna? Meg szeretné igényelni
+            valamelyik szolgáltatásunkat?</p>
+          <div class="proposer__buttons-main">
+            <a href="./galeria.php" class="proposer__button">Vegye fel velünk a kapcsolatot!</a>
+          </div>
         </div>
       </div>
     </div>
     <!-- content div end -->
     <?php require_once './components/footer.php' ?>
-    <!-- footer start -->
-    <!-- footer end -->
   </div>
-  <script src="static/js/mobile-nav.js"></script>
   <script src="static/js/main.js"></script>
+  <script src="static/js/index.js"></script>
 </body>
 
 </html>
