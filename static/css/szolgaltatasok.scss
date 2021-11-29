@@ -1,0 +1,233 @@
+@import "./variables";
+@import './styles';
+
+.hero__main {
+    background-image: url('../images/cleaning_machine.png');
+    overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+    .hero__main {
+        background-position: center center;
+    }
+}
+
+.hero__content {
+    background-color: hsla(240, 42%, 30%, .8);
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .hero__content {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hero__content {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero__content {
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .hero__content {
+        width: 650px;
+        height: 200px;
+        padding: 30px;
+    }
+}
+
+.hero__title {
+    letter-spacing: 0.1rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .hero__title {
+        font-size: 1.3rem;
+    }
+}
+
+.hero__button {
+    border: 1px solid white;
+}
+
+.main__title {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.pp-types__main {
+    border: 2px solid $primaryPurple;
+    margin-top: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    h2 {
+        width: auto;
+        padding: 20px;
+        color: white;
+        background-color: $primaryPurple;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    div {
+        width: 90%;
+        margin: 15px auto;
+        transition: all .5s ease-in-out;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            text-align: center;
+            color: $primaryPurple;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        p{
+            text-align: center;
+            border: 1px solid $primaryPurple;
+            overflow: hidden;
+            transition: all .4s linear;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 0px;
+            padding: 0px 15px;
+            .order-button{
+                border: none;
+                background-color: $primaryPurple;
+                color: white;
+                padding: 10px;
+                width: 90%;
+                margin-top: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .dropdown-button{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            right: 5px;
+            color: $primaryOrange;
+            background-color: $primaryOrange;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border: none;
+            cursor: pointer;
+            svg{
+                transition: all .6s ;
+                color: $primaryPurple;                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .pp-types__main {
+        div{
+            h3{
+                font-size: 18px !important;
+            }
+            p{
+                .order-button{
+                    padding: 13px !important;
+                    width: fit-content !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .pp-types__main {
+        div{
+            p{
+                width: 70% !important;
+            }
+            .dropdown-button{
+                right: 14% !important;
+            }
+        }
+    }
+}
+
+.type__p-visible {
+    max-height: 2000px !important;
+    padding: 15px 15px !important;
+}
+
+.type__button-rotated {
+    transform: rotate(180deg);
+}
+
+$cp-color : Hsla(228 , 56% , 40%, 1);
+
+.cp-types__main{
+    @extend .pp-types__main;
+    border-color: $cp-color;
+    h2{
+        background-color: $cp-color;
+    }
+    div{
+        h3{
+            color: $cp-color;
+        }
+        p{
+            border-color: $cp-color;
+            .order-button{
+                background-color: $cp-color;
+            }
+        }
+        button{
+            svg{
+                color: $cp-color
+            }
+        }
+    }
+}
+
+.service-types__main{
+    @extend .pp-types__main;
+    border-color: $primaryOrange;
+    h2{
+        background-color: $primaryOrange;
+        color: $primaryPurple;
+        font-weight: 600;
+    }
+    div{
+        h3{
+            color: $primaryPurple;
+        }
+        p{
+            border-color: $primaryOrange;
+            .order-button{
+                background-color: $primaryOrange;
+                color: $primaryPurple;
+                font-weight: 600;
+                border: 1px solid $primaryPurple;
+            }
+        }
+        button{
+            background-color: $primaryPurple;
+            svg{
+                color: $primaryOrange;
+            }
+        }
+    }
+}
