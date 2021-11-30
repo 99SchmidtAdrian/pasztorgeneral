@@ -486,7 +486,7 @@ html {
 
 @media screen and (min-width: 1700px) {
   .main__wrapper {
-    margin-top: 525px;
+    margin-top: 550px;
   }
 }
 
@@ -547,8 +547,143 @@ html {
   }
 }
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 98;
+}
+
+.overlay .overlay__bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 99;
+}
+
+.overlay .overlay__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  width: auto;
+  height: 100px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+  background-color: white;
+  padding: 15px 50px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.overlay .overlay__conteiner .overlay__msg {
+  text-align: center;
+  font-weight: 600;
+}
+
+.overlay .overlay__conteiner .overlay__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #2c2c6d;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 450px) {
+  .overlay .overlay__conteiner .overlay__button {
+    margin-top: 20px;
+  }
+}
+
+.overlay-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.email-sent {
+  position: fixed;
+  top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 100;
+  background-color: #e2b476;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.email-sent .email-sent__content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px;
+  color: #2c2c6d;
+}
+
+@media screen and (min-width: 500px) {
+  .email-sent {
+    width: 410px;
+  }
+  .email-sent .email-sent__content {
+    padding: 30px 20px;
+  }
+}
+
+.email-sent-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .hero__main {
-  background-image: url("../images/clean_dining_room.png");
+  background-image: url("../images/contact.png");
   overflow: hidden;
 }
 

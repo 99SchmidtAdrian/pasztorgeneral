@@ -1,8 +1,111 @@
 @import "./variables";
 @import './styles';
 
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    @include centerise(column, center);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 98;
+
+    .overlay__bg {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background-color: hsla(0, 0%, 0%, .85);
+        z-index: 99;
+    }
+    
+    .overlay__conteiner {
+        @include centerise(column, center);
+        width:auto;
+        height: 100px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 100;
+        background-color: white;
+        padding: 15px 50px;
+        transition: all .4s ease-in-out;
+        
+        .overlay__msg{
+            text-align: center;
+            font-weight: 600;
+        }
+        .overlay__button{
+            width: fit-content;
+            background-color: $primaryPurple;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .overlay {
+        .overlay__conteiner{
+            .overlay__button{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.overlay-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.email-sent{
+    position: fixed;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    background-color: $primaryOrange;
+    border-radius: 5px;
+    @include centerise(column, center);
+
+    .email-sent__content{
+        width: fit-content;
+        text-align: center;
+        font-weight: 600;
+        padding: 20px;
+        color: $primaryPurple
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .email-sent {
+        width: 410px;
+        .email-sent__content{
+            padding: 30px 20px;
+        }
+    }
+}
+
+.email-sent-visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .hero__main {
-    background-image: url('../images/clean_dining_room.png');
+    background-image: url('../images/contact.png');
     overflow: hidden;
 }
 

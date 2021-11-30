@@ -16,6 +16,16 @@
 </head>
 
 <body>
+  <div class="overlay">
+    <div class="overlay__bg"></div>
+    <div class="overlay__conteiner">
+      <div class="overlay__msg"></div>
+      <button class="overlay__button">Értettem</button>
+    </div>
+  </div>
+  <div class="email-sent">
+    <div class="email-sent__content">Köszönjük, hogy felkeresett minket! Üzenetét megkaptuk, hamarosan válaszolni fogunk!</div>
+  </div>
   <div id="main-container">
     <?php require_once './components/header.php' ?>
     <!-- content div start -->
@@ -60,8 +70,8 @@
       <div class="form__div">
         <form action="./components/contactform.php" class="form" method="post">
           <div class="inputs">
-            <input type="text" class="input" name="name" placeholder="Név *">
-            <input type="text" class="input" name="email" placeholder="Email *">
+            <input type="text" class="input" name="name" id="name" placeholder="Név *">
+            <input type="text" class="input" name="email" id="email" placeholder="Email *">
             <input type="text" class="input" name="address" placeholder="Cím">
             <input type="text" class="input" name="phone" placeholder="Telefonszám">
           </div>
@@ -75,6 +85,7 @@
     <?php require_once './components/footer.php' ?>
   </div>
   <script src="static/js/main.js"></script>
+  <script src="static/js/kapcsolat.js"></script>
 </body>
 
 </html>
