@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="overlay overlay-hidden">
+    <div class="overlay">
         <div class="overlay__bg"></div>
         <div class="overlay__conteiner">
             <button class="overlay__close">

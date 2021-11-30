@@ -8,10 +8,10 @@
     left: 0px;
     top: 0px;
     @include centerise(column, center);
-    transition: all .4s ease-in-out;
-    opacity: 1;
+    opacity: 0;
     z-index: 98;
-
+    visibility: hidden;
+    
     .overlay__bg {
         width: 100vw;
         height: 100vh;
@@ -71,9 +71,9 @@
     }
 }
 
-.overlay-hidden {
-    visibility: hidden;
-    opacity: 0;
+.overlay-visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .hero__main {

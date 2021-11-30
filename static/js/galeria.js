@@ -6,10 +6,10 @@ const openOverlay = (ordNum) => {
     document.querySelector('.overlay__img').src = imgSrc
     console.log('overlaySrc = ' + overlaySrc)
     console.log('imgSrc = ' + imgSrc)
-    overlay.remove('overlay-hidden')
+    overlay.add('overlay-visible')
 }
 
-const closeOverlay = () => document.querySelector('.overlay').classList.add('overlay-hidden');
+const closeOverlay = () => document.querySelector('.overlay').classList.remove('overlay-visible');
 
 document.querySelector('.overlay__close').addEventListener('click', () => {
     closeOverlay()
