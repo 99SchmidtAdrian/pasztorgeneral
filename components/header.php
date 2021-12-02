@@ -1,9 +1,11 @@
 <?php require_once 'mobile-nav.php' ?>
 <!-- header start -->
 <div class="header" id="header__main">
+    <a href="./" class="header__image-link">
     <div class="header__image-div">
         <img src="./static/images/logo.png" alt="Pásztor Generál Taki - Bízza a takarítást biztos kezekre.">
     </div>
+    </a>
     <div class="desktop-nav__main">
         <ul>
             <li><a href="./" id="fooldal-button">Főoldal</a></li>
