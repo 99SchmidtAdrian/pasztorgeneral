@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PASZTOR GENERAL KFT - A takarító cég</title>
+  <title>PÁSZTOR GENERAL TAKI - A takarító cég</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
@@ -23,8 +23,8 @@
       <button class="overlay__button">Értettem</button>
     </div>
   </div>
-  <div class="email-sent">
-    <div class="email-sent__content">Köszönjük, hogy felkeresett minket! Üzenetét megkaptuk, hamarosan válaszolni fogunk!</div>
+  <div class="email-response">
+    <div class="email-response__content"></div>
   </div>
   <div id="main-container">
     <?php require_once './components/header.php' ?>
