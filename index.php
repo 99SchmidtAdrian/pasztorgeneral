@@ -4,23 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="PASZTOR GENERAL KFT - A takarító cég">
-  <meta name="description"3
-    content="Ha takarító céget keres Budapesten, jó helyen jár! Budapest egyik leújabb és egyben egyik legjobb takarító cége csak arra vár, hogy ön felkeresse!">
+  <meta name="title" content="PÁSZTOR GENERAL TAKI - A takarító cég">
+  <meta name="description"
+    content="Ha takarító céget keres Budapesten, jó helyen jár! Budapest egyik legújabb és egyben egyik legjobb takarító cége csak arra vár, hogy ön felkeresse!">
   <meta name="keywords"
-    content="budapest,takarító,takarítás,pasztor general,takarító cég,olcsó,egyszeri takarítás,általános takarítás,profi takarítás,legjobb takarító cég">
+    content="budapest,takarító,takarítás,pásztor general,takarító cég,olcsó,egyszeri takarítás,általános takarítás,profi takarítás,legjobb takarító cég">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="Hungarian">
   <meta name="revisit-after" content="1 days">
-  <meta name="author" content="Schmidt Adrián">
-  <title>PASZTOR GENERAL KFT - A takarító cég</title>
+  <meta name="author" content="Schmidt Adrián - 99schmidt.adrian@gmail.com">
+  <title>PÁSZTOR GENERAL TAKI - A takarító cég</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./static/css/index.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="icon" href="./static/images/title_logo.png" type="image/icon type" />
 </head>
 
@@ -52,7 +51,7 @@
         <div class="proposer__content">
           <h2 class="proposer__title">Kik vagyunk mi?</h2>
           <p class="proposer_paragraph">Egy megbízható takarító céget szeretne, akikre lehet számítani? A legjobb helyen
-            jár! Ismerkedjen meg a Pasztor General Taki csapatával!</p>
+            jár! Ismerkedjen meg a Pásztor General Taki csapatával!</p>
           <div class="proposer__buttons-main">
             <a href="./galeria.php" class="proposer__button">Ismerkedjen meg csapatunkkal!</a>
           </div>
@@ -78,6 +77,17 @@
             valamelyik szolgáltatásunkat?</p>
           <div class="proposer__buttons-main">
             <a href="./galeria.php" class="proposer__button">Vegye fel velünk a kapcsolatot!</a>
+          </div>
+        </div>
+      </div>
+      <div class="proposer__main">
+        <img src="./static/images/carrier.jpg" class="proposer__image" alt="Kézfogás - Jelentkezés munkára">
+        <div class="proposer__fade-left"></div>
+        <div class="proposer__content">
+          <h2 class="proposer__title">Állást keres?</h2>
+          <p class="proposer_paragraph">El szeretné kezdeni karrierjét építeni?<br />Hosszútávú állást keres?</p>
+          <div class="proposer__buttons-main">
+            <a href="./karrier.php" class="proposer__button">Jelentkezzen most!</a>
           </div>
         </div>
       </div>
