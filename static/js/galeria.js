@@ -1,11 +1,10 @@
 const openOverlay = (ordNum) => {
+    document.querySelector('.overlay').style.transition = "all .4s ease-in-out";
     const overlay = document.querySelector('.overlay').classList;
     const imgSrc = document.querySelector('.pic-' + ordNum).src;
     let overlaySrc = document.querySelector('.overlay__img').src;
     overlaySrc = imgSrc;
     document.querySelector('.overlay__img').src = imgSrc
-    console.log('overlaySrc = ' + overlaySrc)
-    console.log('imgSrc = ' + imgSrc)
     overlay.add('overlay-visible')
 }
 

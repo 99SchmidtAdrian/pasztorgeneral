@@ -3,6 +3,7 @@
 const overlay =  document.querySelector('.overlay');
 
 document.querySelector('.form').addEventListener('submit', (e) => {
+    document.querySelector('.overlay').style.transition = "all .4s ease-in-out";
     const name = document.querySelector("#name");
     const email = document.querySelector("#email");
     const msg = document.querySelector(".msg");
@@ -39,12 +40,22 @@ document.querySelector(".overlay__button").addEventListener("click", () => {
 
 //email sent alert
 
-console.log(window.location.search)
 if(window.location.search === "?email-sent"){
-    const emailSent = document.querySelector('.email-sent');
-    emailSent.style.transition = "all .6s ease-in-out";
-    emailSent.classList.add('email-sent-visible');
+    const emailResponse = document.querySelector('.email-response');
+    document.querySelector(".email-response__content").innerText = "Köszönjük, hogy felkeresett minket! Üzenetét megkaptuk, hamarosan válaszolni fogunk!"
+    emailResponse.style.transition = "all .6s ease-in-out";
+    emailResponse.style.color = "#e2b476";
+    emailResponse.classList.add('email-response-visible');
     setTimeout(() => {
-        emailSent.classList.remove('email-sent-visible');
+        emailResponse.classList.remove('email-response-visible');
     }, 3000)
+}else if(window.location.search === "?email-send-failed"){
+    const emailResponse = document.querySelector('.email-response');
+    document.querySelector(".email-response__content").innerText = "Valami hiba történt, kérjük próbálja meg újra. Ha a hiba továbbra is fennállna, kérjük a következő emailen keressen minket: \nezegy@email.com"
+    emailResponse.style.transition = "all .6s ease-in-out";
+    emailResponse.style.backgroundColor = " #f87171";
+    emailResponse.classList.add('email-response-visible');
+    setTimeout(() => {
+        emailResponse.classList.remove('email-response-visible');
+    }, 8000)
 }
