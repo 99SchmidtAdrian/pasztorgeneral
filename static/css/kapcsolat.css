@@ -25,11 +25,11 @@ html {
   top: 0px;
 }
 
-.header div {
+.header .header__image-link .header__image-div {
   height: 100%;
 }
 
-.header div img {
+.header .header__image-link .header__image-div img {
   height: 90%;
 }
 
@@ -131,14 +131,17 @@ html {
   .desktop-nav__main ul li {
     list-style-type: none;
   }
-  .desktop-nav__main ul li :hover {
+  .desktop-nav__main ul li:hover {
     color: #e2b476;
     -webkit-transform: translate(0px, -3px);
             transform: translate(0px, -3px);
-  }
-  .desktop-nav__main ul li a {
     -webkit-transition: all 0.3s cubic-bezier(0.15, 1.02, 0.69, 0.25);
     transition: all 0.3s cubic-bezier(0.15, 1.02, 0.69, 0.25);
+  }
+  .desktop-nav__main ul li:hover a {
+    color: #e2b476;
+  }
+  .desktop-nav__main ul li a {
     color: white;
     text-decoration: none;
     display: block;
@@ -524,8 +527,12 @@ html {
   }
 }
 
-.footer__logo {
+.footer__logo-link {
   height: 110px;
+}
+
+.footer__logo-link img {
+  height: 100%;
 }
 
 .footer__contacts {
@@ -599,8 +606,6 @@ html {
   z-index: 100;
   background-color: white;
   padding: 15px 50px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
 
 .overlay .overlay__conteiner .overlay__msg {
@@ -633,7 +638,7 @@ html {
   opacity: 1;
 }
 
-.email-sent {
+.email-response {
   position: fixed;
   top: 20px;
   opacity: 0;
@@ -658,7 +663,7 @@ html {
   justify-items: center;
 }
 
-.email-sent .email-sent__content {
+.email-response .email-response__content {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -669,15 +674,15 @@ html {
 }
 
 @media screen and (min-width: 500px) {
-  .email-sent {
+  .email-response {
     width: 410px;
   }
-  .email-sent .email-sent__content {
+  .email-response .email-response__content {
     padding: 30px 20px;
   }
 }
 
-.email-sent-visible {
+.email-response-visible {
   opacity: 1;
   visibility: visible;
 }
@@ -926,7 +931,6 @@ html {
     height: 150px;
     border-width: 2px;
     font-size: 16px;
-    opacity: 1;
   }
   .form__div .form .submit {
     width: 150px;
