@@ -32,16 +32,17 @@
         </div>
         <div class="content">
           <h2 class="title">Lorem Ipsum!</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, possimus doloremque,
-          quod sed iure saepe officiis, quo neque cumque deleniti cum! Velit quo nemo at error fuga modi! Voluptas,
-          necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis ipsum rerum nemo
-          quaerat autem, nihil tenetur harum sequi molestiae culpa minima sit fugit, quis at fugiat adipisci sapiente.
-          Nulla?</p>
-          </div>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, possimus doloremque,
+            quod sed iure saepe officiis, quo neque cumque deleniti cum! Velit quo nemo at error fuga modi! Voluptas,
+            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis ipsum rerum nemo
+            quaerat autem, nihil tenetur harum sequi molestiae culpa minima sit fugit, quis at fugiat adipisci sapiente.
+            Nulla?</p>
+        </div>
       </div>
       <div class="main__content">
         <h2 class="title">Lorem Ipsum</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolor at modi non ducimus similique dolorem
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolor at modi non ducimus similique
+          dolorem
           alias voluptatum dolorum pariatur, consequuntur sapiente cupiditate tempore iste blanditiis vero omnis
           corporis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, labore perferendis ad
           minima fuga quos illo distinctio error sed reprehenderit explicabo cumque perspiciatis ut totam aspernatur
@@ -51,7 +52,8 @@
       </div>
       <div class="main__content">
         <h2 class="title">Lorem Ipsum</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolor at modi non ducimus similique dolorem
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolor at modi non ducimus similique
+          dolorem
           alias voluptatum dolorum pariatur, consequuntur sapiente cupiditate tempore iste blanditiis vero omnis
           corporis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, labore perferendis ad
           minima fuga quos illo distinctio error sed reprehenderit explicabo cumque perspiciatis ut totam aspernatur
@@ -61,7 +63,8 @@
       </div>
       <div class="main__content">
         <h2 class="title">Lorem Ipsum</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolor at modi non ducimus similique dolorem
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolor at modi non ducimus similique
+          dolorem
           alias voluptatum dolorum pariatur, consequuntur sapiente cupiditate tempore iste blanditiis vero omnis
           corporis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, labore perferendis ad
           minima fuga quos illo distinctio error sed reprehenderit explicabo cumque perspiciatis ut totam aspernatur
@@ -69,16 +72,21 @@
           velit, expedita nesciunt saepe? Iste quos sit, reiciendis nulla ab voluptate illum quo quaerat voluptates
           eaque corrupti fuga odio?</p>
       </div>
-      <div class="main__content">
-        <h2 class="title">Lorem Ipsum</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolor at modi non ducimus similique dolorem
-          alias voluptatum dolorum pariatur, consequuntur sapiente cupiditate tempore iste blanditiis vero omnis
-          corporis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, labore perferendis ad
-          minima fuga quos illo distinctio error sed reprehenderit explicabo cumque perspiciatis ut totam aspernatur
-          ratione unde, amet laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit natus
-          velit, expedita nesciunt saepe? Iste quos sit, reiciendis nulla ab voluptate illum quo quaerat voluptates
-          eaque corrupti fuga odio?</p>
-      </div>
+      <!-- <div class="main__content">
+        <h2 class="title">Ezt írták rólunk</h2>
+        <div class="iframes">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feboh01%2Fposts%2F2711505849156211&show_text=true&width=500"
+            width="500" height="285" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flukuman.idayat%2Fposts%2F2328621447274158&show_text=true&width=500"
+            width="500" height="265" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div> -->
     </div>
     <!-- content div end -->
     <?php require_once './components/footer.php' ?>

@@ -5,9 +5,9 @@
                 alt="Pásztor Generál Taki - Bízza a takarítást biztos kezekre.">
         </a>
         <ul class="footer__contacts">
-            <li><a href="">+36303030303</a></li>
-            <li><a href="">Email: ezegy@emailcim.com</a></li>
-            <li><a href="">Cím: 6262 Pecs, Nagy Sandor u. 26</a></li>
+            <li><a class="footer__info" href="tel: +36300815903">Telefonszám: +36-30/081-5903</a></li>
+            <li><a class="footer__info" href="mailto: pasztorgeneraltaki@gmail.com">Email: pasztorgeneraltaki@gmail.com</a></li>
+            <li><span class="footer__info">Budapest 1085 József krt. 69.Fsz1</span></li>
         </ul>
     </footer>
     <!-- footer end -->

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./static/css/galeria.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="icon" href="./static/images/title_logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="static/css/glightbox.css" />
 </head>
 
 <body>
@@ -44,11 +45,18 @@
             <div class="main__pics">
                 <?php 
                 $dirName = './static/images/galery_images/';
-                $images = glob($dirName."*.jpg");
-                $ordNum = 1;
+                $dir = scandir($dirName);
+                $images = array();
+                foreach($dir as $file){
+                    array_push($images, $file);
+                };
+                natsort($images);
+                $images = array_slice($images, 2);
+                $imagesLength = count($images);
                 foreach($images as $image){
-                    echo '<button onClick="openOverlay('.$ordNum.')" class="pic__button"><img class="pic pic-'.$ordNum.'" src="'.$image.'"/></button>';
-                    $ordNum++;
+                    echo '<a class="glightbox2 pic__button" href="'.$dirName.$image.'" >
+                            <img class="pic" src="'.$dirName.$image.'"/>
+                        </a>';
                 }
                 ?>
             </div>
@@ -57,7 +65,23 @@
         <?php require_once './components/footer.php' ?>
     </div>
     <script src="static/js/main.js"></script>
-    <script src="static/js/galeria.js"></script>
+    <script src="static/js/glightbox.min.js"></script>
+    <script>
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2',
+        });
+
+        lightboxDescription.on('close', () => {
+            // Do something
+            lightboxDescription.reload()
+        });
+
+
+        function choose_button(clicked_id) {
+            document.getElementById(clicked_id).innerHTML = "button text changed"
+
+        }
+    </script>
 </body>
 
 </html>

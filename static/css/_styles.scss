@@ -23,6 +23,7 @@ html {
             height: 100%;
             img{
                 height: 90%;
+                width: 195px;
             }
         }
     }
@@ -222,7 +223,7 @@ html {
     position: absolute;
     width: 100%;
     height: 170px;
-    background-image: url('../images/hero_bg.png');
+    background-image: url('../images/hero_bg.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -450,7 +451,7 @@ html {
     list-style: none;
 
     li {
-        a {
+        .footer__info {
 
             color: white;
             font-size: 12px;
@@ -462,7 +463,7 @@ html {
 @media screen and (min-width: 900px) {
     .footer__contacts {
         li {
-            a {
+            .footer__info {
                 font-size: 14px;
             }
         }

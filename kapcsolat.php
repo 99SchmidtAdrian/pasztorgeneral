@@ -73,7 +73,7 @@
             <input type="text" class="input" name="name" id="name" placeholder="Név *">
             <input type="text" class="input" name="email" id="email" placeholder="Email *">
             <input type="text" class="input" name="address" placeholder="Cím">
-            <input type="text" class="input" name="phone" placeholder="Telefonszám">
+            <input type="number" class="input" name="phone" placeholder="Telefonszám">
           </div>
           <label for="msg" class="msg-label">Üzenet</label>
           <textarea type="text" class="msg" name="msg"></textarea>

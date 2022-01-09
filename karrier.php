@@ -55,7 +55,7 @@
           <div class="inputs">
             <input type="text" class="input" name="name" id="name" placeholder="Név *">
             <input type="text" class="input" name="email" id="email" placeholder="Email *">
-            <input type="text" class="input" name="phone" placeholder="Telefonszám">
+            <input type="number" class="input" name="phone" placeholder="Telefonszám">
           </div>
           <label for="cv" class="file-label">Önéletrajz (opcionális)</label>
           <input type="file" name="cv" class="file">

@@ -41,10 +41,10 @@ if(window.location.search === "?email-sent"){
     emailResponse.classList.add('email-response-visible');
     setTimeout(() => {
         emailResponse.classList.remove('email-response-visible');
-    }, 3000)
+    }, 8000)
 }else if(window.location.search === "?email-send-failed"){
     const emailResponse = document.querySelector('.email-response');
-    document.querySelector(".email-response__content").innerText = "Valami hiba történt, kérjük próbálja meg újra. Ha a hiba továbbra is fennállna, kérjük a következő emailre küldje el a jelentkezését: \nezegy@email.com"
+    document.querySelector(".email-response__content").innerHTML = "Valami hiba történt, kérjük próbálja meg újra. Ha a hiba továbbra is fennállna, kérjük a következő emailre küldje el a jelentkezését: \n<a href='mailto: pasztorgeneraltaki@gmail.com'>pasztorgeneraltaki@gmail.com</a>"
     emailResponse.style.transition = "all .6s ease-in-out";
     emailResponse.style.backgroundColor = " #f87171";
     emailResponse.classList.add('email-response-visible');

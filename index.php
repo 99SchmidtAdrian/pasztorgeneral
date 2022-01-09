@@ -33,7 +33,7 @@
     </div>
     <div class="main__wrapper" id="main__wrapper">
       <div class="proposer__main" id="first_proposer__main">
-        <img src="./static/images/clean_dining_room.png" class="proposer__image" alt="Tiszta étkező">
+        <img src="./static/images/clean_dining_room.jpg" class="proposer__image" alt="Tiszta étkező">
         <div class="proposer__fade-left"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Szeretné tudni, mire fizet be?<br />Nézze meg korábbi munkáinkat!</h2>
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="proposer__main">
-        <img src="./static/images/cleaner_team.png" class="proposer__image" alt="Takarító csapat">
+        <img src="./static/images/cleaner_team.jpg" class="proposer__image" alt="Takarító csapat">
         <div class="proposer__fade-right"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Kik vagyunk mi?</h2>
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="proposer__main">
-        <img src="./static/images/cleaning_machine.png" class="proposer__image" alt="Takarítógép">
+        <img src="./static/images/cleaning_machine.jpg" class="proposer__image" alt="Takarítógép">
         <div class="proposer__fade-left"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Pontosan mivel is foglalkozunk?</h2>
@@ -69,7 +69,7 @@
         </div>
       </div>
       <div class="proposer__main">
-        <img src="./static/images/contact.png" class="proposer__image" alt="Laptop - Kapcsolatfelvétel">
+        <img src="./static/images/contact.jpg" class="proposer__image" alt="Laptop - Kapcsolatfelvétel">
         <div class="proposer__fade-right"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Kérdése lenne?</h2>
