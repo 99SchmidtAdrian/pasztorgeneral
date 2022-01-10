@@ -25,7 +25,6 @@
     .overlay__conteiner {
         @include centerise(column, center);
         width:auto;
-        height: 100px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
@@ -208,6 +207,9 @@
         margin: 15px auto;
         font-size: 16px;
         text-align: justify;
+    }
+    .info__title{
+        margin: 40px 0px;
     }
 }
 
