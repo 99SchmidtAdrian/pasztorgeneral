@@ -111,11 +111,11 @@
 .hero__main {
     background-image: url('../images/contact.jpg');
     overflow: hidden;
+    background-position: center bottom;
 }
 
 @media screen and (min-width: 800px) {
     .hero__main {
-        background-position: center center;
     }
 }
 
@@ -202,7 +202,7 @@
 
 
 .main__info {
-    width: 95%;
+    width: 80%;
     margin: 10px auto;
 
     .main-paragraph {
@@ -276,6 +276,7 @@
             resize: none;
             border: 1px solid $primaryPurple;
             border-radius: 0px;
+            box-sizing: border-box;
 
             &:focus-visible {
                 outline: none;

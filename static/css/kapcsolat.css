@@ -7,7 +7,7 @@
 }
 
 * {
-  font-family: 'Sawarabi Gothic', sans-serif;
+  font-family: "Sawarabi Gothic", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -74,8 +74,8 @@ html {
   z-index: 50;
   padding: 0px;
   overflow: hidden;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .back-to-top__main a img {
@@ -285,6 +285,16 @@ html {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.hero__main .attribute-link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: .4;
+  color: black;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
 @media screen and (min-width: 600px) {
   .hero__main {
     height: 250px;
@@ -335,8 +345,8 @@ html {
   font-size: 1.3rem;
   font-weight: 700;
   opacity: 0;
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 @media screen and (min-width: 500px) {
@@ -406,9 +416,10 @@ html {
   text-align: center;
   padding: 5px;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   font-size: 13px;
   padding: 10px;
+  z-index: 10;
   -webkit-transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: -webkit-box;
@@ -695,12 +706,7 @@ html {
 .hero__main {
   background-image: url("../images/contact.jpg");
   overflow: hidden;
-}
-
-@media screen and (min-width: 800px) {
-  .hero__main {
-    background-position: center center;
-  }
+  background-position: center bottom;
 }
 
 .hero__content {
@@ -783,7 +789,7 @@ html {
 }
 
 .main__info {
-  width: 95%;
+  width: 80%;
   margin: 10px auto;
 }
 
@@ -883,6 +889,8 @@ html {
   resize: none;
   border: 1px solid #2c2c6d;
   border-radius: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .form__div .form .msg:focus-visible {

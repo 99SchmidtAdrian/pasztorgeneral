@@ -110,7 +110,7 @@
 .hero__main {
     background-image: url('../images/carrier.jpg');
     overflow: hidden;
-    background-position: center center;
+    background-position: center 70%;
 }
 
 .hero__content {
@@ -194,9 +194,8 @@
     }
 }
 
-
 .main__info {
-    width: 95%;
+    width: 80%;
     margin: 10px auto;
     text-align: center;
 
@@ -264,6 +263,7 @@
             resize: none;
             border: 1px solid $primaryPurple;
             border-radius: 0px;
+            box-sizing: border-box;
 
             &:focus-visible {
                 outline: none;
