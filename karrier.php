@@ -20,7 +20,7 @@
     <div class="overlay__bg"></div>
     <div class="overlay__conteiner">
       <div class="overlay__msg"></div>
-      <button class="overlay__button">Értettem</button>
+      <button class="overlay__button">Értem</button>
     </div>
   </div>
   <div class="email-response">
@@ -40,14 +40,12 @@
         <h2 class="title">Kezdje el építeni karrierjét még ma,<br />a Pásztor General Takival!</h2>
       </div>
       <div class="main__info">
-        <h3 class="main-title">Takakrító</h3>
-        <p class="main-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel vitae, ducimus maxime
-          numquam rerum, sint nobis necessitatibus,<br /> provident dolores assumenda optio ut voluptas eaque voluptatem.
-          Consectetur, ea. Ratione, nam facilis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum illum
-          aut magnam doloribus, vitae esse minus,<br /> voluptates fugit <br /><br />quis provident nesciunt quaerat temporibus
-          necessitatibus doloremque eveniet dignissimos? Omnis, exercitationem vero. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. <br /><br />Doloribus commodi tempora delectus culpa dolores! Harum aliquid velit veritatis
-          reiciendis consequatur deserunt reprehenderit <br />unde, nemo nesciunt temporibus ad ut provident a.</p>
+        <h3 class="main-title">Takarító</h3>
+        <p class="main-paragraph">Fejlődő vállalkozásunk folyamatosan keres megbízható munkaerőt takarító állásra.</br></br>
+        Ha ön tapasztalattal rendelkező takarító, jó munkabírással és szeretne egy jó csapattal együtt dolgozni akkor töltse
+          ki a lenti jelentkezési kérdőívet és hamarosan felvesszük önnel a kapcsolatot, ha megfelel az elvárásainknak.</br></br>
+          Mivel a cégünk jelenleg főleg Budapesti takarításokat vállal így azon jelentkezőket várjuk akiknek nem jelent
+          gondot az utazás.</p>
         <h4 class="info__title">Jelentkezzen hozzánk az alábbi űrlap kitöltésével:</h4>
       </div>
       <div class="form__div">
@@ -58,9 +56,9 @@
             <input type="number" class="input" name="phone" placeholder="Telefonszám">
           </div>
           <label for="cv" class="file-label">Önéletrajz (opcionális)</label>
-          <input type="file" name="cv" class="file">
+          <input type="file" name="cv" class="file cv-input">
           <label for="cover-letter" class="file-label">Motivációs levél (opcionális)</label>
-          <input type="file" name="cover-letter" class="file"><br />
+          <input type="file" name="cover-letter" class="file coverletter-input"><br />
           <label for="msg" class="msg-label">Megjegyzés (opcionális)</label>
           <textarea type="text" class="msg" name="msg"></textarea>
           <button type="submit" class="submit" name='submit'>Küldés</button>
