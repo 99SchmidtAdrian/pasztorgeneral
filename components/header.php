@@ -9,7 +9,7 @@
     <div class="desktop-nav__main">
         <ul>
             <li><a href="./" id="fooldal-button">Főoldal</a></li>
-            <li><a href="./rolunk.php" id="rolunk-button">Rólunk</a></li>
+            <!-- <li><a href="./rolunk.php" id="rolunk-button">Rólunk</a></li> -->
             <li><a href="./galeria.php" id="galeria-button">Galéria</a></li>
             <li><a href="./szolgaltatasok.php" id="szolgaltatasok-button">Szolgáltatások</a></li>
             <li><a href="./kapcsolat.php" id="kapcsolat-button">Kapcsolat</a></li>
