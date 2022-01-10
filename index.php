@@ -30,6 +30,7 @@
     <div class="hero__main" id="hero__main">
       <h1 class="hero__title">A legjobb helyen jár, ha minőségi takarítást szeretne!</h1>
       <a href="./rolunk.php" class="hero__button">Ismerkedjen meg velünk!</a>
+      <a href="https://www.freepik.com/vectors/background" class="attribute-link">Background vector created by macrovector - www.freepik.com</a>
     </div>
     <div class="main__wrapper" id="main__wrapper">
       <div class="proposer__main" id="first_proposer__main">
@@ -45,8 +46,8 @@
           </div>
         </div>
       </div>
-      <div class="proposer__main">
-        <img src="./static/images/cleaner_team.jpg" class="proposer__image" alt="Takarító csapat">
+      <!-- <div class="proposer__main">
+        <img src="./static/images/logo.png" class="proposer__image" alt="Takarító csapat" style="background-color: hsla(240, 42%, 30%, 1);">
         <div class="proposer__fade-right"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Kik vagyunk mi?</h2>
@@ -56,10 +57,10 @@
             <a href="./galeria.php" class="proposer__button">Ismerkedjen meg csapatunkkal!</a>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="proposer__main">
-        <img src="./static/images/cleaning_machine.jpg" class="proposer__image" alt="Takarítógép">
-        <div class="proposer__fade-left"></div>
+        <img src="./static/images/vacuum-cleaner.jpg" class="proposer__image" alt="Takarítógép">
+        <div class="proposer__fade-right"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Pontosan mivel is foglalkozunk?</h2>
           <p class="proposer_paragraph">Válasszon hatalmas takarítási kínálatunkból, a cégére szabottan!</p>
@@ -70,7 +71,7 @@
       </div>
       <div class="proposer__main">
         <img src="./static/images/contact.jpg" class="proposer__image" alt="Laptop - Kapcsolatfelvétel">
-        <div class="proposer__fade-right"></div>
+        <div class="proposer__fade-left"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Kérdése lenne?</h2>
           <p class="proposer_paragraph">Nem találta meg, amit keresett? Kérdése maradt volna? Meg szeretné igényelni
@@ -82,7 +83,7 @@
       </div>
       <div class="proposer__main">
         <img src="./static/images/carrier.jpg" class="proposer__image" alt="Kézfogás - Jelentkezés munkára">
-        <div class="proposer__fade-left"></div>
+        <div class="proposer__fade-right"></div>
         <div class="proposer__content">
           <h2 class="proposer__title">Állást keres?</h2>
           <p class="proposer_paragraph">El szeretné kezdeni karrierjét építeni?<br />Hosszútávú állást keres?</p>
