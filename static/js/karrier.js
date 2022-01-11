@@ -1,14 +1,15 @@
 //form validation
 
 const overlay = document.querySelector(".overlay");
+const cvFile = document.querySelector(".cv-input");
+const coverLetterFile = document.querySelector(".coverletter-input"); 
+
 
 document.querySelector(".form").addEventListener("submit", (e) => {
   document.querySelector(".overlay").style.transition = "all .4s ease-in-out";
   const name = document.querySelector("#name");
   const email = document.querySelector("#email");
   const overlayMsg = document.querySelector(".overlay__msg");
-  const cvFile = document.querySelector(".cv-input");
-  const coverLetterFile = document.querySelector(".coverletter-input"); 
   const allowedExtensions = ["pdf", "doc", "docx", "jpg", "jpeg", "png", "txt"];
   const regex = new RegExp(
     "([a-zA-Z0-9s_\\.-:])+(" + allowedExtensions.join("|") + ")$"
@@ -75,3 +76,28 @@ if (window.location.search === "?email-sent") {
     emailResponse.classList.remove("email-response-visible");
   }, 8000);
 }
+
+//file name change
+cvFile.addEventListener('change', ()=>{
+  let filepath = cvFile.value;
+  if (filepath === "") {
+    document.querySelector(".cv-filename").innerText = "Nincs fájl kiválasztva";
+
+  }else{
+    let m = filepath.match(/([^\/\\]+)$/);
+    let filename = m[1];
+    document.querySelector(".cv-filename").innerText = filename;  
+  }
+})
+
+coverLetterFile.addEventListener('change', ()=>{
+  let filepath = coverLetterFile.value;
+  if (filepath === "") {
+    document.querySelector(".coverletter-filename").innerText = "Nincs fájl kiválasztva";
+
+  }else{
+    let m = filepath.match(/([^\/\\]+)$/);
+    let filename = m[1];
+    document.querySelector(".coverletter-filename").innerText = filename;  
+  }
+})

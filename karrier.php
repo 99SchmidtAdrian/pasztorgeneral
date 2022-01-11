@@ -41,9 +41,12 @@
       </div>
       <div class="main__info">
         <h3 class="main-title">Takarító</h3>
-        <p class="main-paragraph">Fejlődő vállalkozásunk folyamatosan keres megbízható munkaerőt takarító állásra.</br></br>
-        Ha ön tapasztalattal rendelkező takarító, jó munkabírással és szeretne egy jó csapattal együtt dolgozni akkor töltse
-          ki a lenti jelentkezési kérdőívet és hamarosan felvesszük önnel a kapcsolatot, ha megfelel az elvárásainknak.</br></br>
+        <p class="main-paragraph">Fejlődő vállalkozásunk folyamatosan keres megbízható munkaerőt takarító
+          állásra.</br></br>
+          Ha ön tapasztalattal rendelkező takarító, jó munkabírással és szeretne egy jó csapattal együtt dolgozni akkor
+          töltse
+          ki a lenti jelentkezési kérdőívet és hamarosan felvesszük önnel a kapcsolatot, ha megfelel az
+          elvárásainknak.</br></br>
           Mivel a cégünk jelenleg főleg Budapesti takarításokat vállal így azon jelentkezőket várjuk akiknek nem jelent
           gondot az utazás.</p>
         <h4 class="info__title">Jelentkezzen hozzánk az alábbi űrlap kitöltésével:</h4>
@@ -53,12 +56,22 @@
           <div class="inputs">
             <input type="text" class="input" name="name" id="name" placeholder="Név *">
             <input type="text" class="input" name="email" id="email" placeholder="Email *">
-            <input type="number" class="input" name="phone" placeholder="Telefonszám">
+            <input type="number" class="input" name="phone" placeholder="Telefonszám" class="phone-input">
           </div>
-          <label for="cv" class="file-label">Önéletrajz (opcionális)</label>
-          <input type="file" name="cv" class="file cv-input">
-          <label for="cover-letter" class="file-label">Motivációs levél (opcionális)</label>
-          <input type="file" name="cover-letter" class="file coverletter-input"><br />
+          <div class="file-desc">Önéletrajz (opcionális)</div>
+          <div class="file-upload">
+            <span class="filename cv-filename">Nincs fájl kiválasztva</span>
+            <label for="cv" class="file-label">Fájl feltöltése
+              <input type="file" name="cv" class="file cv-input" id="cv" />
+            </label>
+          </div>
+          <div class="file-desc">Motivációs levél (opcionális)</div>
+          <div class="file-upload">
+          <span class="filename coverletter-filename">Nincs fájl kiválasztva</span>
+          <label for="cover-letter" class="file-label">Fájl feltöltése
+            <input type="file" name="cover-letter" class="file coverletter-input" id="cover-letter">
+          </label>
+          </div>
           <label for="msg" class="msg-label">Megjegyzés (opcionális)</label>
           <textarea type="text" class="msg" name="msg"></textarea>
           <button type="submit" class="submit" name='submit'>Küldés</button>

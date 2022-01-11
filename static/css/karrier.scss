@@ -239,14 +239,37 @@
             }
         }
         
-        .file-label{
+        .file-desc{
             color: $primaryPurple;
-            font-size: 14px;
+            font-size: 16px;
             margin: 10px auto 5px 0px;
         }
 
+        .file-upload{
+            width: fit-content;
+
+        }
+        .filename{
+            font-size: 14px;
+            padding: 3px 8px;
+            float:left;
+            width:fit-content;
+            white-space: nowrap;
+            overflow:hidden;
+          }
+        .file-label{
+            display: inline-block;
+            font-size: 14px;
+            border: 2px dashed $primaryPurple;
+            width: fit-content;
+            border-radius: 20px;
+            padding: 3px 8px;
+            font-weight: 600;
+            color: $primaryPurple;
+        }
+
         .file{
-            margin: 0px auto 0px 0px;
+            display: none;
         }
 
         .msg-label {

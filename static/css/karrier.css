@@ -289,7 +289,7 @@ html {
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: .4;
+  opacity: 0.4;
   color: black;
   margin-left: 5px;
   font-size: 10px;
@@ -564,6 +564,16 @@ html {
   .footer__contacts li .footer__info {
     font-size: 14px;
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .overlay {
@@ -866,14 +876,44 @@ html {
   font-size: 13px;
 }
 
-.form__div .form .file-label {
+.form__div .form .file-desc {
   color: #2c2c6d;
-  font-size: 14px;
+  font-size: 16px;
   margin: 10px auto 5px 0px;
 }
 
+.form__div .form .file-upload {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form__div .form .filename {
+  font-size: 14px;
+  padding: 3px 8px;
+  float: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.form__div .form .file-label {
+  display: inline-block;
+  font-size: 14px;
+  border: 2px dashed #2c2c6d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 3px 8px;
+  font-weight: 600;
+  color: #2c2c6d;
+}
+
 .form__div .form .file {
-  margin: 0px auto 0px 0px;
+  display: none;
 }
 
 .form__div .form .msg-label {
