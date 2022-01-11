@@ -226,14 +226,14 @@ html {
   background-size: cover;
   @include centerise(column, center);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  .attribute-link{
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      opacity: .4;
-      color: black;
-      margin-left: 5px;
-      font-size: 10px;
+  .attribute-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.4;
+    color: black;
+    margin-left: 5px;
+    font-size: 10px;
   }
 }
 
@@ -464,4 +464,13 @@ html {
       }
     }
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }

@@ -289,7 +289,7 @@ html {
   position: absolute;
   left: 0;
   bottom: 0;
-  opacity: .4;
+  opacity: 0.4;
   color: black;
   margin-left: 5px;
   font-size: 10px;
@@ -564,6 +564,16 @@ html {
   .footer__contacts li .footer__info {
     font-size: 14px;
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .proposer_paragraph {
