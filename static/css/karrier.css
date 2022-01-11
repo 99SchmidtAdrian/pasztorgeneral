@@ -911,6 +911,7 @@ input[type=number] {
   font-weight: 600;
   color: #2c2c6d;
   cursor: pointer;
+  text-align: center;
 }
 
 .form__div .form .file {
